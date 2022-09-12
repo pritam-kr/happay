@@ -1,0 +1,27 @@
+.nav{
+    box-shadow: var(--smooth-shadow);
+    padding: 1rem 0;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.site-title{
+    color: var(--primary-color);
+}
+
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}

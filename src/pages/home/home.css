@@ -1,0 +1,13 @@
+.home-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}

@@ -1,0 +1,21 @@
+.hero-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.star-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.divider {
+  width: 2.5rem;
+  border: 1px solid var(--primary-color);
+}
+
+.star-icons {
+  color: var(--primary-color);
+  margin: 0 1rem;
+}
