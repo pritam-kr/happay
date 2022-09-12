@@ -1,49 +1,80 @@
-.card-wrapper{
-    max-width: 400px;
-    background-color: var(--primary-white);
-    margin: 0 auto;
-    border-radius: 1rem;
+.card-wrapper {
+  max-width: 400px;
+  background-color: var(--primary-white);
+  margin: 0 auto;
+  border-radius: 1rem;
 }
-.card-name{
-    text-transform: capitalize;
+.card-name {
+  text-transform: capitalize;
 }
-.card-img{
-    width: 100%;
-    height: auto;
-    box-shadow: var(--smooth-shadow);
-    border-radius: 1rem;
-    object-fit: cover;
-}
-
-
-.btn-add-to-cart{
-    width: 100%;
-    border-radius: .5rem;
-    font-weight: 600;
-    padding: .5rem 1rem;
-    cursor: pointer;
+.card-img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--smooth-shadow);
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
-.card-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn-add-to-cart {
+  width: 100%;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-.card-description{
-    margin: 1rem 0;
-}
-.card-info{
-    padding: .5rem;
-}
-
-.card-price{
-    font-weight: 700;
-    font-family: var(--primary-font);
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.original-price{
-    margin-right: .5rem;
-    color: var(--secondary-text);
-    text-decoration: line-through;
+.card-description {
+  margin: 1rem 0;
+}
+.card-info {
+  padding: 0.5rem;
+}
+
+.card-price {
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+
+.original-price {
+  margin-right: 0.5rem;
+  color: var(--secondary-text);
+  text-decoration: line-through;
+}
+
+.qyt-btn-wrapper {
+  display: grid;
+  grid-template-columns: 22% 56% 22%;
+}
+
+.qyt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-qyt {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  
+}
+
+.btn-decrement{
+  border-top-left-radius: .3rem;
+  border-bottom-left-radius: .3rem;
+}
+
+.btn-increment{
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
 }

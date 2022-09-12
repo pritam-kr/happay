@@ -1,10 +1,15 @@
 import React from "react";
 import "./nav.css";
 import * as Icons from "react-icons/bi";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export const Nav = () => {
   const { pathname } = useLocation();
+
+  const {cardReducer :{cart}} = useSelector(state => state)
+
+  const navigate = useNavigate()
 
   return (
     <nav className="nav">
@@ -24,7 +29,8 @@ export const Nav = () => {
         <div className="left-side">
           {pathname === "/" ? (
             <div className="cart-icon-wrapper">
-              <Icons.BiCartAlt className="icons cart-icon" />
+              <Icons.BiCartAlt className="icons cart-icon" onClick={() => navigate("/cart")} />
+              {cart.length === 0 ? "" : <p className="cart-qyt">{cart.length}</p>}
             </div>
           ) : (
             ""

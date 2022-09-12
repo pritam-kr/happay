@@ -6,6 +6,7 @@ export const data = {
         "description": "This card is used for spending on Food merchants",
         "final_price": 21,
         "original_price": 30,
+        "quantity": 1,
         "img_url": "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/orange_card.png"
         },
         {
@@ -14,6 +15,7 @@ export const data = {
         "description": "This card is used for spending on Travel and hotel bookings",
         "final_price": 20,
         "original_price": 40,
+        "quantity": 1,
         "img_url": "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/blue_card.png"
         },
         {
@@ -22,6 +24,7 @@ export const data = {
         "description": "Use this card and get benefits on every transaction",
         "final_price": 40,
         "original_price": 50,
+        "quantity": 1,
         "img_url": "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/golden_card.png"
         },
         {
@@ -30,6 +33,7 @@ export const data = {
         "description": "Use this card and get benefits on every transaction",
         "final_price": 40,
         "original_price": 60,
+        "quantity": 1,
         "img_url": "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/black_card.png"
         }
         ]

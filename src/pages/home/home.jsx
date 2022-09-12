@@ -5,7 +5,9 @@ import "./home.css"
  
 const Home = () => {
 
-  const {cardReducer:{cards}} = useSelector(state => state)
+  const {cardReducer:{cards, cart}} = useSelector(state => state)
+
+  console.log(cart)
   return (
     
     <section className='section home-section'>
