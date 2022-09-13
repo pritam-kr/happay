@@ -63,6 +63,13 @@ const Cart = () => {
                   </div>
                 ))}
               </div>
+
+              <p
+                className="paragraph add-more-text"
+                onClick={() => navigate("/")}
+              >
+                <Icons.BiPlus className="icons plus-icon" /> Add more items
+              </p>
             </div>
 
             <div className="price-details-wrapper">

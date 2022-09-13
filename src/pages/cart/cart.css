@@ -155,6 +155,15 @@
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
-   
   text-transform: capitalize;
+}
+
+.add-more-text{
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
 }

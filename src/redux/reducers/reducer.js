@@ -1,14 +1,20 @@
 import { data } from "../../data";
 
+const cardsData = JSON.parse(localStorage.getItem("cards")) || [
+  ...data.cardData,
+];
+const cartData = JSON.parse(localStorage.getItem("cart")) || []
+
 export const cardReducer = (
   state = {
-    cards: [...data.cardData],
-    cart: [],
+    cards: [...cardsData],
+    cart: [...cartData],
   },
   action
 ) => {
   switch (action.type) {
     case "ADD_TO_CART":
+  
       return { ...state, cart: [...state.cart, action.payload] };
 
     case "INCREMENT_QUANTITY":
@@ -37,8 +43,7 @@ export const cardReducer = (
         cart: [...quantityUpdateInCarts],
       };
 
-      case "DECREMENT_QUANTITY": 
-
+    case "DECREMENT_QUANTITY":
       const isCardD = state.cards.find(
         (eachCard) => eachCard.id === action.payload
       );
