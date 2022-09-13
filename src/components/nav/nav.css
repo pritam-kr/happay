@@ -12,10 +12,12 @@
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    cursor: pointer;
 }
 
 .site-title{
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .left-side{

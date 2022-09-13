@@ -15,14 +15,14 @@ export const Nav = () => {
     <nav className="nav">
       <div className="wrapper nav-wrapper">
         <div className="right-side logo-wrapper">
-          <div className="logo">
+          <div className="logo"  onClick={() => navigate('/')}>
             <img
               src="https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/blue_logo.svg"
               className="img image-logo"
               alt="happay-logo"
             />
           </div>
-          <div className="site-title">
+          <div className="site-title" onClick={() => navigate('/')}>
             <h2 className="heading site-title">Happay</h2>
           </div>
         </div>
