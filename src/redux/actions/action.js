@@ -31,3 +31,11 @@ export const decrementQuantityAction = (cardId) => {
         payload: cardId
     }
 }
+
+export const removeCartItemAction = (cardId) => {
+    return {
+        type: "REMOVE_CART_ITEM",
+        payload: cardId
+    }
+}
+

@@ -3,7 +3,7 @@ import { data } from "../../data";
 const cardsData = JSON.parse(localStorage.getItem("cards")) || [
   ...data.cardData,
 ];
-const cartData = JSON.parse(localStorage.getItem("cart")) || []
+const cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const cardReducer = (
   state = {
@@ -14,7 +14,6 @@ export const cardReducer = (
 ) => {
   switch (action.type) {
     case "ADD_TO_CART":
-  
       return { ...state, cart: [...state.cart, action.payload] };
 
     case "INCREMENT_QUANTITY":
@@ -69,6 +68,16 @@ export const cardReducer = (
         cart: [...quantityUpdateInCartsD],
       };
 
+    case "REMOVE_CART_ITEM":
+      const removingCartItems = state.cart.filter(
+        (item) => item.id !== action.payload
+      );
+
+      return {
+        ...state,
+
+        cart: [...removingCartItems],
+      };
     default:
       return state;
   }
