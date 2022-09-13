@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCartAction } from "../../redux/actions/action";
+import { offerPercentage } from "../../utils/priceCalculation";
 import { QuantityButton } from "../quantityButton/quantityButton";
 import "./card.css";
 
@@ -15,8 +16,10 @@ export const Card = ({ eachCard }) => {
     dispatch(addToCartAction(card));
   };
 
+  const getOfferPercentage = offerPercentage(eachCard);
+
   return (
-    <div className="card-wrapper" >
+    <div className="card-wrapper">
       <img src={eachCard.img_url} alt={eachCard.name} className="card-img" />
 
       <div className="card-info">
@@ -47,6 +50,8 @@ export const Card = ({ eachCard }) => {
           )}
         </div>
       </div>
+
+      <p className="paragraph offer-text">{getOfferPercentage}% OFF</p>
     </div>
   );
 };
