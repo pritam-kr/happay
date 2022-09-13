@@ -22,7 +22,12 @@ export const QuantityButton = ({ eachCard }) => {
     <>
       <div className="qyt-btn-wrapper">
         {eachCard.quantity <= 1 ? (
-          <button className="btn btn-qyt btn-decrement " onClick={() => dispatch(removeCartItemAction(eachCard.id))}>-</button>
+          <button
+            className="btn btn-qyt btn-decrement "
+            onClick={() => dispatch(removeCartItemAction(eachCard.id))}
+          >
+            -
+          </button>
         ) : (
           <button
             onClick={() => decrementQuantityHandler(eachCard.id)}
